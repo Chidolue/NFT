@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.whole {
+    background-color: hsl(215, 53%, 18%);
+    border: 2px solid transparent;
+    height: 600px;
+    width: 360px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    border: 2px solid transparent;
+    height: 560px;
+    width: 310px;
+    border-radius: 10px;
+}
+
+.first-image {
+    height: 298px;
+    width: 310px;
+    border-radius: 10px;
+    display: block;
+}
+
+.first-image:hover {
+    cursor: grab;
+}
+
+.image-overlay {
+    position: relative;
+    display: inline-block;
+}
+  
+.image-overlay:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 12px;
+    background: url("nft-preview-card-component-main/nft-preview-card-component-main/images/icon-view.svg") center no-repeat;
+    background-color: rgba(0, 255, 255, 0.519); /* Apply semi-transparent background */
+    cursor: grab;
+}
+
+
+p {
+    color: hsl(215, 51%, 70%);
+    margin: 1rem 0;
+}
+
+.ethereum {
+    height: 20px;
+    width: 13px;
+}
+
+.clock {
+    height: 25px;
+    width: 20px;
+}
+
+.flexer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#horizontal {
+    margin: 1.5rem 0;
+}
+
+.avatar{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.grey {
+    color: hsl(215, 51%, 70%);
+}
+
+h3 {
+    margin: 1rem 0;
+    font-weight: bolder;
+}
+
+h3:hover {
+    color: cyan;
+}
+
+.cyan {
+    color: cyan;
+}
+
+p {
+    margin: 1.5rem 0;
+}
+
+.middle {
+    display: inline-block;
+    transform: translateY(-0.7rem);
+}
+.middle1 {
+    display: inline-block;
+    transform: translateY(-0.3rem);
+}
+
+.middle:hover {
+    color: cyan;
+}
+
+
+@media screen and (max-width: 576px) {
+    .inner {
+        height: 540px;
+        width: 250px;
+    }
+    
+    .whole {
+        height: 580px;
+        width: 300px;
+    }
+
+    .first-image {
+        height: 238px;
+        width: 250px;
+    }
+
+    h3 {
+        margin: 2rem 0;
+    }
+
+    p {
+        margin: 2.5rem 0;
+    }
+
+}
